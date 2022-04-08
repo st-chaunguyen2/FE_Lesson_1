@@ -1,6 +1,8 @@
 ## Pizza order
 * Author: Chau Nguyen V
 * Team: FE
+### Deployed link:
+* https://rococo-klepon-4a9c3f.netlify.app/
 ### Run
 * npm install | yarn
 * npm start | yarn start
