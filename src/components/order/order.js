@@ -101,6 +101,7 @@ const Order = () => {
               style={{
                 width: "60%",
               }}
+              alt="Pizza"
             />
           </div>
 
