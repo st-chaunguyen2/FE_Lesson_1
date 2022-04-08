@@ -1,0 +1,129 @@
+form {
+  max-width: 500px;
+  margin: 0 auto;
+} */
+
+.payment h1 {
+  font-weight: 100;
+  /* color: white; */
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(79, 98, 148);
+}
+
+.payment h5 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.payment .form {
+  background: #0e101c;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.payment .card-form {
+  margin-top: 30px;
+  width: 500px;
+  border: 1px solid lightgrey;
+  border-radius: 8px;
+  padding: 5px 20px 25px 20px;
+  background: #2a2d42;
+}
+
+.payment p {
+  color: #bf1650;
+  font-size: 14px;
+}
+
+.payment p::before {
+  display: inline;
+  content: "⚠ ";
+}
+
+.payment input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid lightgrey;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.payment label {
+  line-height: 2;
+  text-align: left;
+  display: block;
+  margin-top: 15px;
+  color: white;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.payment button[type="submit"],
+input[type="submit"] {
+  background: #FF8C00;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  margin-top: 40px;
+  padding: 20px;
+  font-size: 16px;
+  /* font-weight: 100; */
+  letter-spacing: 10px;
+}
+
+.payment button[type="submit"]:active,
+input[type="button"]:active,
+input[type="submit"]:active {
+  transition: 0.3s all;
+  transform: translateY(3px);
+  border: 1px solid transparent;
+  opacity: 0.8;
+}
+
+.payment input:disabled {
+  opacity: 0.4;
+}
+
+.payment input[type="button"]:hover {
+  transition: 0.3s all;
+}
+
+.payment button[type="submit"],
+input[type="button"],
+input[type="submit"] {
+  -webkit-appearance: none;
+}
+
+.payment button[type="button"] {
+  display: block;
+  appearance: none;
+  background: #333;
+  /* color: white; */
+  border: none;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+.payment pre {
+  /* color: white; */
+}
+
+.payment hr {
+  margin-top: 30px;
+}
+
+.payment button {
+  display: block;
+  appearance: none;
+  margin-top: 40px;
+  border: 1px solid #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
