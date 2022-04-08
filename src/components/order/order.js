@@ -78,7 +78,8 @@ const Order = () => {
       totalPrice
     }))
 
-    window.location.href = 'http://localhost:3000/info'
+    window.location.href = `${window.location.origin}/info`
+    
     // const navigate = useNavigate()
     // navigate('/info')
   }

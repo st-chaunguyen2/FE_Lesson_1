@@ -81,7 +81,7 @@ const Checkout = () => {
               background: "#FF8C00",
               borderColor: '#FF8C00',
             }}
-            onClick={() => window.location.href = 'http://localhost:3000/payment'}
+            onClick={() => window.location.href = `${window.location.origin}/payment`}
           >Checkout</Button>
         </Col>
       </Row>

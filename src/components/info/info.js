@@ -12,7 +12,7 @@ const Info = () => {
 
   const onSubmit = (data) => {
     localStorage.setItem('userInfo', JSON.stringify(data))
-    window.location.href = 'http://localhost:3000/checkout'
+    window.location.href = `${window.location.origin}/checkout`
   }
 
   return (
