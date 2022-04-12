@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import { Container, Row, Col, Button } from 'react-bootstrap'
+import { useNavigate } from 'react-router-dom'
 
 const Checkout = () => {
+  const navigate = useNavigate()
+
   const [user, setUser] = useState()
   const [bill, setBill] = useState()
 
@@ -81,7 +84,7 @@ const Checkout = () => {
               background: "#FF8C00",
               borderColor: '#FF8C00',
             }}
-            onClick={() => window.location.href = `${window.location.origin}/payment`}
+            onClick={() => navigate('/payment')}
           >Checkout</Button>
         </Col>
       </Row>

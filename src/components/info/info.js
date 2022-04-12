@@ -1,9 +1,12 @@
 import React from "react"
 import { Container, Row, Col } from "react-bootstrap"
 import { useForm } from "react-hook-form"
+import { useNavigate } from 'react-router-dom'
 import "./info.css"
 
 const Info = () => {
+  const navigate = useNavigate()
+
   const {
     register,
     handleSubmit,
@@ -12,7 +15,7 @@ const Info = () => {
 
   const onSubmit = (data) => {
     localStorage.setItem('userInfo', JSON.stringify(data))
-    window.location.href = `${window.location.origin}/checkout`
+    navigate('/checkout')
   }
 
   return (

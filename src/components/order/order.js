@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react"
-// import { useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { Container, Row, Col, Form, Button } from "react-bootstrap"
 import PizzaBase from "../../assets/pizza/pizza-base.png"
 
 const Order = () => {
+  const navigate = useNavigate()
+
   const handleBasePrice = (size) => {
     if (size === "small") return 15
     if (size === "medium") return 20;
@@ -77,11 +79,8 @@ const Order = () => {
       toppings,
       totalPrice
     }))
-
-    window.location.href = `${window.location.origin}/info`
     
-    // const navigate = useNavigate()
-    // navigate('/info')
+    navigate('/info')
   }
 
   return (
